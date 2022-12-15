@@ -5,9 +5,12 @@ import java.util.Date;
 public class BoardVO {
     public BoardVO() {}
     private int seq;
-    private String category;
+    private String type;
     private String title;
     private String writer;
+    private String price;
+    private String place;
+    private String number;
     private String content;
     private String photo;
     private Date regdate;
@@ -19,8 +22,8 @@ public class BoardVO {
     public void setSeq(int seq) {
         this.seq = seq;
     }
-    public String getCategory() { return category; }
-    public void setCategory(String category) { this.category = category; }
+    public String getType() { return type; }
+    public void setType(String category) { this.type = category; }
     public String getTitle() {
         return title;
     }
@@ -33,6 +36,31 @@ public class BoardVO {
     public void setWriter(String writer) {
         this.writer = writer;
     }
+
+    public String getPrice() {
+        return price;
+    }
+
+    public String getPlace() {
+        return place;
+    }
+
+    public String getNumber() {
+        return number;
+    }
+
+    public void setPrice(String price) {
+        this.price = price;
+    }
+
+    public void setPlace(String place) {
+        this.place = place;
+    }
+
+    public void setNumber(String number) {
+        this.number = number;
+    }
+
     public String getContent() {
         return content;
     }

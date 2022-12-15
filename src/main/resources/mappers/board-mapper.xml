@@ -2,22 +2,22 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="Board">
     <insert id="insertBoard">
-        insert into BOARD (category, title, writer, content)
+        insert into SALE (type, title, price, content, writer, place, number)
         values
-        (#{category} , #{title} , #{writer} , #{content})
+        (#{type} , #{title} , #{price} , #{content} , #{writer} , #{place} , #{number})
     </insert>
     <update id="updateBoard">
-        update BOARD
-        set title=#{title}, content=#{content}, writer=#{writer}, category=#{category}
+        update SALE
+        set type=#{type}, title=#{title}, price=#{price}, content=#{content}, writer=#{writer}, place=#{place}, number=#{number}
         where seq=#{seq}
     </update>
     <delete id="deleteBoard">
-        delete from BOARD where seq=#{seq}
+        delete from SALE where seq=#{seq}
     </delete>
     <select id="getBoard" resultType="board">
-        select * from BOARD where seq=#{seq}
+        select * from SALE where seq=#{seq}
     </select>
     <select id="getBoardList" resultType="board">
-        select * from BOARD order by seq desc
+        select * from SALE order by seq desc
     </select>
 </mapper>
