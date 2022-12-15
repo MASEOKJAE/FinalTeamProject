@@ -30,6 +30,7 @@
 <%--				</td>--%>
 		</table>
 		<input type="submit" value="Edit Post"/>
+		<input type="reset" value="Reset Post"/>
 		<input type="button" value="Cancel" onclick="history.back()"/>
 	</form:form>
 

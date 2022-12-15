@@ -22,6 +22,7 @@
 <%--            <tr><td>Photo:</td><td><input type="file" name="photo"/></td></tr>--%>
         </table>
         <button type="button" onclick="location.href='list'">Lists</button>
+        <button type="reset">Reset</button>
         <button type="submit">Register</button>
     </form>
 

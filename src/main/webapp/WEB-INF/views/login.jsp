@@ -24,7 +24,7 @@
     </head>
     <body>
         <div id="first">
-            <img src='../img/christmas.jpg' height="250">
+            <img src='../img/HGU_Market.jpg' height="300">
             <form method="post" action="loginOk">
                 <div>
                     <label>User ID: </label>
