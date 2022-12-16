@@ -12,6 +12,7 @@
 	<title>HGU 중고 마켓 Main</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
 	  integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+	<link href='https://css.gg/log-out.css' rel='stylesheet'>
 
 	<style>
 	#p_title {
@@ -54,6 +55,11 @@
 	  background-color: deepskyblue;
 	  color: beige;
 	}
+	#logout_info {
+		text-align: left;
+		left: 12px;
+		position: relative;
+	}
 </style>
 <script>
 	function delete_ok(id){
@@ -69,6 +75,9 @@
 			<button type="button" onclick="location.href='add'">Register Now</button><br/>
 	</div>
 	<div>
+		<div id="logout_info">
+			<a href="login/logout"><i class="gg-log-out"></i></a>
+		</div>
 		<table id="list" width="90%">
 		<tr>
 <%--			<th>No</th>--%>
